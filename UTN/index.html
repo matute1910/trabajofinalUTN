@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!--<link rel="stylesheet" href="css/style.css"> -->
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300&display=swap');
+
+    *{
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+        outline: 0;
+        box-sizing: border-box;
+    }
+
+    header{
+            color: white;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            background-color: rgb(42, 39, 39);
+            padding-top: 20px;
+            padding: 20px;
+    }
+
+    nav{
+        display: flex;
+        gap: 60px;
+        align-items: center;   
+    }
+
+    main{
+        background-color: rgb(54, 54, 54);   
+    }
+
+    .contenedor{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px;
+        max-width: 1500vw;
+        margin: 20px;
+    }
+
+    .informacion{
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 30px;
+        width: 98.7vw;
+        height: 200vh;
+        align-items: center;
+        margin-top: 50px;
+        border-radius: 5px;
+    }
+    
+    .card{
+        background-color: #fff;
+        height: 280px;
+        width: 300px;
+        overflow: hidden;
+        margin: auto;
+        padding: 10px 30px;
+        border-radius: 2%;
+        border: 1px solid #fff;
+        transition: all .4s ease-in-out;
+        box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3);
+        text-align: center;
+    }
+
+    .card:hover{
+        height: 550px;
+        width: 300px;
+        border-radius: 5px;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .titulo{
+        color: black;
+        font-size: 20px;
+        margin-left: 10px;
+        text-shadow: 1px 1px 2px rgb(201, 198, 198);
+        padding: 10px;
+    }
+
+    .simbolo{
+        color: blue;
+        font-size: 25px;
+    }
+
+    .precio{
+        font-family: 'Courier New', Courier, monospace;
+        size: 15px;
+        padding: 20px;
+    }
+
+    .boton{
+        border-radius: 5px;
+        height: 30px;
+        margin: 25px;
+        width: 120px;
+
+    }
+
+    .inicio{
+        display: flex;
+        background-color: rgb(54, 54, 54);
+        height: 15vh;
+        width: 80vw;
+        border-radius: 15px;
+        margin: 40px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .inicio h2{
+        font-family: 'Roboto', sans-serif;
+        margin: 0 auto;
+        text-shadow: 1px 1px 2px rgb(201, 198, 198);
+        font-size: 50px;
+    }
+
+    .organizacion{
+        background-color: rgb(54, 54, 54);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 50vh;
+        width: 80vw;
+        border-radius: 15px;
+        margin: 40px;
+    }
+
+    .organizacion h2{
+        text-shadow: 1px 1px 2px rgb(201, 198, 198);
+        font-size: 50px;
+    }
+
+    .contacto{
+        background-color: rgb(54, 54, 54);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 60vh;
+        width: 80vw;
+        border-radius: 15px;
+        margin: 40px;
+    }
+
+    .contacto h2{
+        text-shadow: 1px 1px 2px rgb(201, 198, 198);
+        font-size: 50px;
+    }
+
+    .contacto .formulario{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contacto .formulario input{
+        border-radius: 10px;
+        margin: 5px;
+        height: 5vh;
+        width: 30vw;
+    }
+
+    .descripcionOrg{
+        font-size: 20px;
+        margin: 50px;
+        height: 10vh;
+        width: 65vw;
+    }
+
+    .descripcionOrg p{
+        font-size: 20px;
+    }
+
+
+
+    </style>
+</head>
+<body> 
+    <header>
+        <h2>PCTECNO<i class="bi bi-xbox"></i></h2>
+        <nav>
+            <a href="">Inicio</a>
+            <a href="">Productos</a>
+            <a href="">Contactos</a>
+        </nav>
+    </header>
+    <main>
+        <section class="contenedor">
+            
+            <div class="card">
+                <div class="cardImagen">
+                    <img src="./img/notebookHP15.webp" width="250px" alt="Imagen de notebook HP-15">
+                </div>
+                <div class="cardContenido">
+                    <div class="titulo">Notebook HP-15.</div>
+                    <div class="precio"><span class="simbolo">$</span>123.500</div>
+                    <div class="descripcion">
+                        <p>Procesador Intel Core i5.- Memoria RAM de 12GB.- Pantalla LCD de 15.6.
+                            - Resolución de 1920x1080 px. 
+                            -Placa de video Intel Graphics G7.- Conexión wifi y 
+                            bluetooth.- Cuenta con 3 puertos USB y puerto HDMI.
+                            - Sonido Stereo.- Duración de la batería 5 horas.
+                        </p>
+                        <button class="boton">Comprar </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="cardImagen">
+                    <img src="./img/notebookHP15.webp" width="250px" alt="Imagen de notebook HP-15">
+                </div>
+                <div class="cardContenido">
+                    <div class="titulo">Notebook HP-15.</div>
+                    <div class="precio"><span class="simbolo">$</span>123.500</div>
+                    <div class="descripcion">
+                        <p>Procesador Intel Core i5.- Memoria RAM de 12GB.- Pantalla LCD de 15.6.
+                            - Resolución de 1920x1080 px. 
+                            -Placa de video Intel Graphics G7.- Conexión wifi y 
+                            bluetooth.- Cuenta con 3 puertos USB y puerto HDMI.
+                            - Sonido Stereo.- Duración de la batería 5 horas.
+                        </p>
+                        <button class="boton">Comprar </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="cardImagen">
+                    <img src="./img/notebookHP15.webp" width="250px" alt="Imagen de notebook HP-15">
+                </div>
+                <div class="cardContenido">
+                    <div class="titulo">Notebook HP-15.</div>
+                    <div class="precio"><span class="simbolo">$</span>123.500</div>
+                    <div class="descripcion">
+                        <p>Procesador Intel Core i5.- Memoria RAM de 12GB.- Pantalla LCD de 15.6.
+                            - Resolución de 1920x1080 px. 
+                            -Placa de video Intel Graphics G7.- Conexión wifi y 
+                            bluetooth.- Cuenta con 3 puertos USB y puerto HDMI.
+                            - Sonido Stereo.- Duración de la batería 5 horas.
+                        </p>
+                        <button class="boton">Comprar </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="cardImagen">
+                    <img src="./img/notebookHP15.webp" width="250px" alt="Imagen de notebook HP-15">
+                </div>
+                <div class="cardContenido">
+                    <div class="titulo">Notebook HP-15.</div>
+                    <div class="precio"><span class="simbolo">$</span>123.500</div>
+                    <div class="descripcion">
+                        <p>Procesador Intel Core i5.- Memoria RAM de 12GB.- Pantalla LCD de 15.6.
+                            - Resolución de 1920x1080 px. 
+                            -Placa de video Intel Graphics G7.- Conexión wifi y 
+                            bluetooth.- Cuenta con 3 puertos USB y puerto HDMI.
+                            - Sonido Stereo.- Duración de la batería 5 horas.
+                        </p>
+                        <button class="boton">Comprar </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="cardImagen">
+                    <img src="./img/notebookHP15.webp" width="250px" alt="Imagen de notebook HP-15">
+                </div>
+                <div class="cardContenido">
+                    <div class="titulo">Notebook HP-15.</div>
+                    <div class="precio"><span class="simbolo">$</span>123.500</div>
+                    <div class="descripcion">
+                        <p>Procesador Intel Core i5.- Memoria RAM de 12GB.- Pantalla LCD de 15.6.
+                            - Resolución de 1920x1080 px. 
+                            -Placa de video Intel Graphics G7.- Conexión wifi y 
+                            bluetooth.- Cuenta con 3 puertos USB y puerto HDMI.
+                            - Sonido Stereo.- Duración de la batería 5 horas.
+                        </p>
+                        <button class="boton">Comprar </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="cardImagen">
+                    <img src="./img/notebookHP15.webp" width="250px" alt="Imagen de notebook HP-15">
+                </div>
+                <div class="cardContenido">
+                    <div class="titulo">Notebook HP-15.</div>
+                    <div class="precio"><span class="simbolo">$</span>123.500</div>
+                    <div class="descripcion">
+                        <p>Procesador Intel Core i5.- Memoria RAM de 12GB.- Pantalla LCD de 15.6.
+                            - Resolución de 1920x1080 px. 
+                            -Placa de video Intel Graphics G7.- Conexión wifi y 
+                            bluetooth.- Cuenta con 3 puertos USB y puerto HDMI.
+                            - Sonido Stereo.- Duración de la batería 5 horas.
+                        </p>
+                        <button class="boton">Comprar </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="cardImagen">
+                    <img src="./img/notebookHP15.webp" width="250px" alt="Imagen de notebook HP-15">
+                </div>
+                <div class="cardContenido">
+                    <div class="titulo">Notebook HP-15.</div>
+                    <div class="precio"><span class="simbolo">$</span>123.500</div>
+                    <div class="descripcion">
+                        <p>Procesador Intel Core i5.- Memoria RAM de 12GB.- Pantalla LCD de 15.6.
+                            - Resolución de 1920x1080 px. 
+                            -Placa de video Intel Graphics G7.- Conexión wifi y 
+                            bluetooth.- Cuenta con 3 puertos USB y puerto HDMI.
+                            - Sonido Stereo.- Duración de la batería 5 horas.
+                        </p>
+                        <button class="boton">Comprar </button>
+                    </div>
+                </div>
+            </div><div class="card">
+                <div class="cardImagen">
+                    <img src="./img/notebookHP15.webp" width="250px" alt="Imagen de notebook HP-15">
+                </div>
+                <div class="cardContenido">
+                    <div class="titulo">Notebook HP-15.</div>
+                    <div class="precio"><span class="simbolo">$</span>123.500</div>
+                    <div class="descripcion">
+                        <p>Procesador Intel Core i5.- Memoria RAM de 12GB.- Pantalla LCD de 15.6.
+                            - Resolución de 1920x1080 px. 
+                            -Placa de video Intel Graphics G7.- Conexión wifi y 
+                            bluetooth.- Cuenta con 3 puertos USB y puerto HDMI.
+                            - Sonido Stereo.- Duración de la batería 5 horas.
+                        </p>
+                        <button class="boton">Comprar </button>
+                    </div>
+                </div>
+            </div>
+         
+        </section>
+        <section class="informacion">
+            
+            <div class="inicio">
+                <h2>inicio</h2>
+            </div>
+            <div class="organizacion">
+                <h2>Organizacion</h2>
+
+                <div class="descripcionOrg">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Exercitationem corporis adipisci nesciunt voluptates magnam et, 
+                        sequi amet officiis iure nisi. Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Exercitationem corporis adipisci nesciunt voluptates magnam et, 
+                        sequi amet officiis iure nisi?</p>
+                </div>
+                
+            </div>
+            <div class="contacto">
+                <h2>Contacto</h2>
+                <form action="#" class="formulario">
+                    <input type="text" placeholder="Ingrese su Nombre y Apellido">
+                    <input type="email" placeholder="Ingrese su email">
+                    <textarea name="comentario" id="" cols="30" rows="10">
+
+                    </textarea>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+           
+        </section>
+        
+
+       <!--<script src="./Js/script.js"></script>-->
+    </main>
+</body>
+</html>

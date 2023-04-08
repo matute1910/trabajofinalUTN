@@ -1,0 +1,27 @@
+[
+    {
+        "nombre":"Notebook HP 15-DY2056MS",
+        "imagen": "https://images.fravega.com/f1000/440a8633d1fc27f9fd9ced1b172042fa.jpg",
+        "precio": 112.000,
+        "descripcion": "Procesador Intel Core i5.- Memoria RAM de 12GB.- Pantalla LCD de 15.6.- Resolución de 1920x1080 px.- Es táctil. -Placa de video Intel Iris Xe Graphics G7 80EUs.- Conexión wifi y bluetooth.- Cuenta con 3 puertos USB y puerto HDMI.- Incluye lector de tarjeta de memoria.- Posee pad numérico.- Modo de sonido Stereo.- La duración de la batería 5 horas."
+        
+    }, 
+    {
+        "nombre":"Notebook HP 15-DY2056MS",
+        "imagen": "./img/notebookHP15.png",
+        "precio": 112.000,
+        "descripcion": "Procesador Intel Core i5.- Memoria RAM de 12GB.- Pantalla LCD de 15.6.- Resolución de 1920x1080 px.- Es táctil. -Placa de video Intel Iris Xe Graphics G7 80EUs.- Conexión wifi y bluetooth.- Cuenta con 3 puertos USB y puerto HDMI.- Incluye lector de tarjeta de memoria.- Posee pad numérico.- Modo de sonido Stereo.- La duración de la batería 5 horas."
+    },
+    {
+        "nombre":"Notebook HP 15-DY2056MS",
+        
+        "precio": 112.000,
+        "descripcion": "Procesador Intel Core i5.- Memoria RAM de 12GB.- Pantalla LCD de 15.6.- Resolución de 1920x1080 px.- Es táctil. -Placa de video Intel Iris Xe Graphics G7 80EUs.- Conexión wifi y bluetooth.- Cuenta con 3 puertos USB y puerto HDMI.- Incluye lector de tarjeta de memoria.- Posee pad numérico.- Modo de sonido Stereo.- La duración de la batería 5 horas."
+    },
+    {
+        "nombre":"Notebook HP 15-DY2056MS",
+        
+        "precio": 112.000,
+        "descripcion": "La notebook HP 15-dy2056ms es una solución tanto para trabajar y estudiar como para entretenerte. Al ser portátil, el escritorio dejará de ser tu único espacio de uso para abrirte las puertas a otros ambientes ya sea en tu casa o en la oficina.Pantalla con gran impacto visual.Su pantalla LCD de 15.6 y 1920x1080 px de resolución te brindará colores más vivos y definidos. Tus películas y series preferidas cobrarán vida, ya que ganarán calidad y definición en cada detalle."
+    }
+]
